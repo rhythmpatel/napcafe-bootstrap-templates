@@ -3,8 +3,18 @@ const path = require('path')
 
 const pages = {
     'index': 'Index',
-    'landing': 'Landing',
-    'login': 'Login'
+    'landing-a': 'Landing A',
+    'landing-b': 'Landing B',
+    'about': 'About',
+    'blog': 'Blog',
+    'blog-list': 'Blog List',
+    'booking': 'Booking',
+    'search': 'Search',
+    'detail': 'Detail',
+    'payment': 'Payment',
+    'index': 'Index',
+    'profile': 'Profile',
+    'history': 'History'
 };
 
 const plugins = [
