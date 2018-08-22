@@ -1,18 +1,68 @@
 <html>
+
 <head>
     <title>Index</title>
 </head>
+
 <body>
     <%= require('html-loader!./components/navbar/navbar.html') %>
-    <div class="position-relative overflow-hidden text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto">
-            <h1 class="display-4 font-weight-normal">Punny headline</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's
-                marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        <div class="position-relative overflow-hidden text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                        <%= require('html-loader!./components/item/category.html') %>
+                </div>
+                <div class="col">
+                        <%= require('html-loader!./components/item/category.html') %>
+                </div>
+                <div class="col">
+                        <%= require('html-loader!./components/item/category.html') %>
+                </div>
+                <div class="col">
+                        <%= require('html-loader!./components/item/category.html') %>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+                <h3>FEATURED</h3>
+            <div class="row">
+                <div class="col">
+                    <%= require('html-loader!./components/item/normal.html') %>
+                </div>
+                <div class="col">
+                    <%= require('html-loader!./components/item/normal.html') %>
+                </div>
+                <div class="col">
+                    <%= require('html-loader!./components/item/normal.html') %>
+                </div>
+                <div class="col">
+                    <%= require('html-loader!./components/item/normal.html') %>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+                <h3>BLOG</h3>
+            <div class="row">
+                <div class="col">
+                        <%= require('html-loader!./components/item/blog.html') %>
+                </div>
+                <div class="col">
+                        <%= require('html-loader!./components/item/blog.html') %>
+                </div>
+                <div class="col">
+                        <%= require('html-loader!./components/item/blog.html') %>
+                </div>
+            </div>
+        </section>
 </body>
+
 </html>

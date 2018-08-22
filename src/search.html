@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Index</title>
+</head>
+
+<body>
+    <%= require('html-loader!./components/navbar/navbar.html') %>
+        <section class="container">
+            <h3>RESULT</h3>
+            <div class="row">
+                <div class="col-8">
+                    <%= require('html-loader!./components/item/normal.html') %>
+                    <%= require('html-loader!./components/item/normal.html') %>
+                    <%= require('html-loader!./components/item/normal.html') %>
+                    <%= require('html-loader!./components/item/normal.html') %>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>
