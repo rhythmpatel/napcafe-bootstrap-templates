@@ -33,7 +33,7 @@ $search-bar-height: 50px;
                 border: 0;
 
                 &:focus + .label, &:valid + .label {
-                    font-size: 0.7rem;
+                    transform: scale(0.7, 0.7);
                     height: 35px;
                 }
             }
@@ -55,6 +55,8 @@ $search-bar-height: 50px;
             }
 
             .label {
+                transform: scale(1, 1);
+                transform-origin: 20px 20px;
                 position: absolute;
                 left: 0;
                 top: 0;

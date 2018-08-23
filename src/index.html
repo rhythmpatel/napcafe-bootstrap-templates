@@ -6,54 +6,53 @@
 
 <body>
     <%= require('html-loader!./components/navbar/navbar-signin.html') %>
-    <%= require('html-loader!./components/search/search.html') %>
-        <section class="container">
-            <div class="row">
-                <div class="col">
-                        <%= require('html-loader!./components/item/category.html') %>
+        <%= require('html-loader!./components/search/search.html') %>
+            <section class="category-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <%= require('html-loader!./components/item/category.html') %>
+                        </div>
+                        <div class="col">
+                            <%= require('html-loader!./components/item/category1.html') %>
+                        </div>
+                        <div class="col">
+                            <%= require('html-loader!./components/item/category2.html') %>
+                        </div>
+                        <div class="col">
+                            <%= require('html-loader!./components/item/category3.html') %>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                        <%= require('html-loader!./components/item/category.html') %>
-                </div>
-                <div class="col">
-                        <%= require('html-loader!./components/item/category.html') %>
-                </div>
-                <div class="col">
-                        <%= require('html-loader!./components/item/category.html') %>
-                </div>
-            </div>
-        </section>
-        <section class="container">
+            </section>
+            <section class="container">
                 <h3>FEATURED</h3>
-            <div class="row">
-                <div class="col">
-                    <%= require('html-loader!./components/item/normal.html') %>
+                <div class="row">
+                    <div class="col">
+                        <%= require('html-loader!./components/item/normal.html') %>
+                    </div>
+                    <div class="col">
+                        <%= require('html-loader!./components/item/normal.html') %>
+                    </div>
+                    <div class="col">
+                        <%= require('html-loader!./components/item/normal.html') %>
+                    </div>
                 </div>
-                <div class="col">
-                    <%= require('html-loader!./components/item/normal.html') %>
-                </div>
-                <div class="col">
-                    <%= require('html-loader!./components/item/normal.html') %>
-                </div>
-                <div class="col">
-                    <%= require('html-loader!./components/item/normal.html') %>
-                </div>
-            </div>
-        </section>
-        <section class="container">
+            </section>
+            <section class="container">
                 <h3>BLOG</h3>
-            <div class="row">
-                <div class="col">
+                <div class="row">
+                    <div class="col">
                         <%= require('html-loader!./components/item/blog.html') %>
-                </div>
-                <div class="col">
+                    </div>
+                    <div class="col">
                         <%= require('html-loader!./components/item/blog.html') %>
-                </div>
-                <div class="col">
+                    </div>
+                    <div class="col">
                         <%= require('html-loader!./components/item/blog.html') %>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 </body>
 
 </html>
