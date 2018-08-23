@@ -1,5 +1,153 @@
 .navbar {
+    position: fixed;
+    z-index: 1050;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease;
+    background-color: $color-white;
+    height: $navbar-height;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,.1);
+
     .navbar-brand {
         color: $color-black;
+        font-weight: 400;
+        .text-main {
+            font-weight: 500;
+        }
+    }
+    .search-bar {
+        display: block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .navbar-collapse {
+        display: flex;
+
+        .navbar-nav {
+            flex: 1;
+        }
+
+        .navbar-right {
+            justify-content: flex-end;
+        }
+
+        .navbar-center {
+            flex: 1.4;
+        }
+    }
+
+    .nav-action {
+        .nav-link {
+            border-color: $color-main;
+            color: $color-main;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &:hover {
+                background-color: $color-main;
+            }
+        }
+    }
+
+    .nav-profile {
+        .nav-link {
+            color: $color-black;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                display: none;
+            }
+
+            &:hover, &:active, &:focus {
+                color: $color-main;
+            }
+
+            .profile-img {
+                margin-left: 10px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.sps--abv {
+        background-color: transparent;
+        box-shadow: none;
+        height: $navbar-height + 10px;
+        
+        .search-bar {
+            display: none;
+        }
+
+        .navbar-brand {
+            color: $color-white;
+        }
+
+        .nav-action {
+            .nav-link {
+                border-color: $color-white;
+                color: $color-white;
+
+                &:hover {
+                    background-color: $color-main;
+                    border-color: $color-main;
+                }
+            }
+        }
+
+        .nav-profile {
+            .nav-link {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.navbar-search-container {
+    width: 100%;
+    position: relative;
+    background-color: $color-white;
+    border-radius: 3px;
+    margin-bottom: 0;
+
+    .form-control {
+        position: relative;
+        width: 100%;
+        height: $navbar-height - 20px;
+        padding: 10px;
+        z-index: 1001;
+        background-color: transparent;
+        margin-right: 0;
+        padding: 0 15px;
+        font-size: 0.9rem;
+        box-shadow: 1px 2px 4px 0 rgba(0,0,0,.03);
+        border: 1px solid rgba(0,0,0,.1);
+        
+        &::-webkit-input-placeholder {
+            color: $color-grey;
+        }
+    }
+    
+
+    .btn-submit-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px;
+
+        .btn {
+            height: 100%;
+            height: $navbar-height - 30px;
+            background-color: $color-main;
+            color: $color-white;
+            padding: 0 15px;
+        }
     }
 }
