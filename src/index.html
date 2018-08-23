@@ -6,16 +6,7 @@
 
 <body>
     <%= require('html-loader!./components/navbar/navbar.html') %>
-        <div class="position-relative overflow-hidden text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-        </div>
+    <%= require('html-loader!./components/search/search.html') %>
         <section class="container">
             <div class="row">
                 <div class="col">

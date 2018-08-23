@@ -1,0 +1,61 @@
+$search-bar-height: 50px;
+
+.search-bar-container {
+    .container {
+        padding: 5rem 0;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .input-container {
+            width: 100%;
+            position: relative;
+            background-color: $color-white;
+            .form-control {
+                position: relative;
+                width: 100%;
+                height: $search-bar-height + 20px;
+                padding: 10px;
+                z-index: 1001;
+                background-color: transparent;
+                margin-right: 0;
+                padding: 25px 20px 15px 20px ;
+                font-size: 1.2rem;
+
+                &:focus + .label, &:valid + .label {
+                    font-size: 0.7rem;
+                    height: 35px;
+                }
+            }
+            
+
+            .btn-submit-container {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 10px;
+
+                .btn {
+                    height: 100%;
+                    height: $search-bar-height;
+                    background-color: $color-main;
+                    color: $color-white;
+                    padding: 0 30px;
+                }
+            }
+
+            .label {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: $search-bar-height + 20px;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: $color-grey;
+                z-index: 1000;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+}

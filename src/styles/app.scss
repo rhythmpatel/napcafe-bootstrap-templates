@@ -1,0 +1,11 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-orange {
+    color: $color-main;
+}
+
+@import '../components/navbar/navbar';
+@import '../components/footer/footer';
+@import '../components/search/search';
