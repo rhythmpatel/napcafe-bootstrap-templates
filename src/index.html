@@ -8,7 +8,7 @@
     <%= require('html-loader!./components/modal/signin.html') %>
     <%= require('html-loader!./components/navbar/navbar-signin.html') %>
     <%= require('html-loader!./components/search/search.html') %>
-    <section class="category-container">
+    <section class="category-container bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -43,17 +43,20 @@
             </div>
         </div>
     </section>
-    <section class="container">
-        <h3>BLOG</h3>
-        <div class="row">
-            <div class="col">
-                <%= require('html-loader!./components/item/blog.html') %>
-            </div>
-            <div class="col">
-                <%= require('html-loader!./components/item/blog.html') %>
-            </div>
-            <div class="col">
-                <%= require('html-loader!./components/item/blog.html') %>
+    <section class="section blog-item-container bg-grey">
+        <div class="container">
+            <h3 class="title">HOW-TO</h3>
+            <p class="subtitle">A blog of how to making a dessert, coffee, cooking..</p>
+            <div class="row">
+                <div class="col">
+                    <%= require('html-loader!./components/item/blog.html') %>
+                </div>
+                <div class="col">
+                    <%= require('html-loader!./components/item/blog2.html') %>
+                </div>
+                <div class="col">
+                    <%= require('html-loader!./components/item/blog3.html') %>
+                </div>
             </div>
         </div>
     </section>

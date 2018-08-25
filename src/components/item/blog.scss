@@ -1,4 +1,4 @@
-.detail-item-container {
+.blog-item-container {
     padding: 2.5rem 0;
     .item {
         position: relative;
@@ -42,21 +42,17 @@
             padding: 10px 0;
 
             .item-title {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 font-weight: 500;
-                margin-bottom: 0;
-                .badge {
-                    font-weight: 400;
-                    font-size: 0.8rem;
-                    color: $color-black-lightest;
-                    margin-left: 3px;
-                }
+                margin-bottom: 5px;
+                line-height: 1.5rem;
+                
             }
 
-            .item-description {
-                font-size: 0.9rem;
+            .item-info {
+                font-size: 0.8rem;
                 margin-bottom: 4px;
-                color: $color-black-light;
+                color: $color-black-lightest;
             }
         }
 
