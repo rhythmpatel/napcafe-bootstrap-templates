@@ -1,0 +1,44 @@
+$search-bar-height: 50px;
+
+.app-header-container {
+    padding-top: $navbar-height;
+    background: url(../images/home-bg3.jpg) no-repeat center left fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .container {
+        padding: 5rem 0;
+        max-width: 800px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+    .title {
+        font-weight: 500;
+        text-align: left;
+        color: $color-white;
+        font-size: 3rem;
+        opacity: 0;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        text-align: left;
+        color: $color-white;
+        opacity: 0;
+        text-align: center;
+    }
+
+    .title, .subtitle, .container {
+        transition: all 0.5s ease;
+    }
+
+    &.sps--abv {
+        .title, .subtitle, .container {
+            opacity: 1;
+        }
+    }
+}
