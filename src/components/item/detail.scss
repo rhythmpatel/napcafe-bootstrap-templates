@@ -1,0 +1,70 @@
+.detail-item-container {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    .item {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        border-radius: 2px;
+
+        .item-img {
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                z-index: 100;
+            }
+
+            .item-rating {
+                position: absolute;
+                left: 0;
+                top: 10px;
+                z-index: 1000;
+                background-color: $color-main;
+                padding: 1px 6px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+
+                .fa-star {
+                    color: $color-white;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .item-body {
+            padding: 10px 0;
+
+            .item-title {
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin-bottom: 0;
+                .badge {
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                    color: $color-black-lightest;
+                    margin-left: 3px;
+                }
+            }
+
+            .item-description {
+                font-size: 0.9rem;
+                margin-bottom: 4px;
+                color: $color-black-light;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            .title {
+                transform: scale(1.4, 1.4);
+                background-color: rgba(0,0,0, 0.6);
+            }
+        }
+    }
+}

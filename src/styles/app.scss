@@ -6,7 +6,9 @@
     color: $color-main;
 }
 
+@import './section';
 @import '../components/navbar/navbar';
 @import '../components/footer/footer';
 @import '../components/search/search';
 @import '../components/item/category';
+@import '../components/item/detail';
