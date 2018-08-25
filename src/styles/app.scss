@@ -2,6 +2,10 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.app-main-container {
+    padding-top: $navbar-height;
+}
+
 .text-main {
     color: $color-main;
 }
@@ -17,3 +21,6 @@
 @import '../components/item/category';
 @import '../components/item/detail';
 @import '../components/item/blog';
+@import '../components/item/search';
+
+@import '../components/modal/signin';

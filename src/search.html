@@ -5,20 +5,24 @@
 </head>
 
 <body>
-    <%= require('html-loader!./components/navbar/navbar.html') %>
-        <section class="container">
-            <h3>RESULT</h3>
-            <div class="row">
-                <div class="col-8">
-                    <%= require('html-loader!./components/item/detail.html') %>
-                    <%= require('html-loader!./components/item/detail.html') %>
-                    <%= require('html-loader!./components/item/detail.html') %>
-                    <%= require('html-loader!./components/item/detail.html') %>
-                </div>
-                <div class="col-4">
+    <%= require('html-loader!./components/navbar/navbar-nosps.html') %>
+    <div class="app-main-container">
+        <section class="section search-item-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <%= require('html-loader!./components/item/search.html') %>
+                    </div>
+                    <div class="col-12">
+                        <%= require('html-loader!./components/item/search.html') %>
+                    </div>
+                    <div class="col-12">
+                        <%= require('html-loader!./components/item/search.html') %>
+                    </div>
                 </div>
             </div>
         </section>
+    </div>
 </body>
 
 </html>

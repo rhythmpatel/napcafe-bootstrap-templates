@@ -1,15 +1,19 @@
-.detail-item-container {
+.search-item-container {
     padding: 2.5rem 0;
     .item {
         position: relative;
         overflow: hidden;
         display: block;
         border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
 
         .item-img {
             border-radius: 2px;
             overflow: hidden;
             position: relative;
+            max-width: 300px;
 
             img {
                 width: 100%;
@@ -39,7 +43,7 @@
         }
 
         .item-body {
-            padding: 10px 0;
+            padding: 0 20px;
 
             .item-title {
                 font-size: 1.3rem;
