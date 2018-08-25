@@ -1,0 +1,27 @@
+.blog-container {
+
+    .blog-content {
+        padding: 2.5rem 0;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 400;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        b {
+            font-weight: 500;
+        }
+    }
+}
