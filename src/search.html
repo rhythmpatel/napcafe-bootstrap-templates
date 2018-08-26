@@ -6,23 +6,45 @@
 
 <body>
     <%= require('html-loader!./components/navbar/navbar-nosps.html') %>
-    <div class="app-main-container">
-        <section class="section search-item-container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <%= require('html-loader!./components/item/search.html') %>
-                    </div>
-                    <div class="col-12">
-                        <%= require('html-loader!./components/item/search.html') %>
-                    </div>
-                    <div class="col-12">
-                        <%= require('html-loader!./components/item/search.html') %>
+        <div class="app-main-container">
+            <section class="section search-item-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                                <div class="col-12">
+                                    <%= require('html-loader!./components/item/search.html') %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div id="search-map" class="map-container"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 </body>
 
 </html>

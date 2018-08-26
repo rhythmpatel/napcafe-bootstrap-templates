@@ -10,7 +10,8 @@ const plugins = [
     new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        ScrollPosStyler: 'scrollpos-styler'
+        ScrollPosStyler: 'scrollpos-styler',
+        L: 'leaflet'
     })
 ]
 
