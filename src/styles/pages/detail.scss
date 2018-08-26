@@ -1,5 +1,5 @@
-.blog-container {
-    .blog-content {
+.page-detail-container {
+    .page-content {
         padding: 2.5rem 0;
         font-size: 1.1rem;
         line-height: 1.8rem;
@@ -22,5 +22,13 @@
         b {
             font-weight: 500;
         }
+    }
+
+    .page-sidebar {
+        padding: 2.5rem 0;
+    }
+
+    .map-container {
+        height: 180px;
     }
 }
