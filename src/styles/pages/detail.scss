@@ -1,26 +1,50 @@
 .page-detail-container {
-    .page-content {
+    .page-content-container {
         padding: 2.5rem 0;
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 400;
-            margin-bottom: 1rem;
-            margin-top: 0.5rem;
+
+        .image-gallery {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow: auto;
+
+            a {
+                display: block;
+                width: 150px;
+                height: 150px;
+                border-radius: 2px;
+                overflow: hidden;
+                height: auto;
+                margin-right: 10px;
+                flex: 0 0 150px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 
-        img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 1rem;
-        }
+        .page-content {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 400;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+            }
 
-        p {
-            margin-bottom: 1rem;
-        }
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
 
-        b {
-            font-weight: 500;
+            p {
+                margin-bottom: 1rem;
+            }
+
+            b {
+                font-weight: 500;
+            }
         }
     }
 

@@ -5,6 +5,7 @@
         overflow: hidden;
         display: block;
         border-radius: 2px;
+        color: $color-black;
 
         .item-img {
             border-radius: 2px;
@@ -62,6 +63,7 @@
 
         &:hover {
             cursor: pointer;
+            text-decoration: none;
             
             .item-img {
                 img {
